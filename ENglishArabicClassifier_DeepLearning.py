@@ -20,12 +20,6 @@ for source, filepath in filepath_dict.items():
 df = pd.concat(df_list)
 print(df.iloc[1698389])
 
-#build TestSet
-sentences = ['John likes ice cream', 'انا اهووه']
-
-vectorizer = CountVectorizer(min_df=0, lowercase=False)
-vectorizer.fit(sentences)
-vectorizer.transform(sentences).toarray()
 
 #Defining a Baseline Model
 #split To train and test Sets
